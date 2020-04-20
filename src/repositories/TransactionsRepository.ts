@@ -49,11 +49,11 @@ class TransactionsRepository {
   }
 
   public create({ title, value, type }: CreateTransactionDTO): Transaction {
-    const transaction = new Transaction({ title, value, type });
+    const transactions = new Transaction({ title, value, type });
 
-    this.transactions.push(transaction);
+    this.transactions.push(transactions);
 
-    return transaction;
+    return transactions;
   }
 }
 
